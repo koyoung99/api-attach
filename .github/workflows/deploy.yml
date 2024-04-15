@@ -9,7 +9,7 @@ name: Deploy mysite App
 on:
   push:
     branches:
-      - master # 또는 프로젝트의 기본 브랜치명
+      - master # 또는 프로젝트의 기본 브랜치
 
 jobs:
   build-and-deploy:
@@ -35,7 +35,6 @@ jobs:
 
       - name: Push Docker image to Docker Hub
         run: docker push koyoung99/attach:latest
-        
         
   SSH:
     needs: build-and-deploy
