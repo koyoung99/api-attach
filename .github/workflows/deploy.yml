@@ -9,7 +9,7 @@ name: Deploy mysite App
 on:
   push:
     branches:
-      - master # 또는 프로젝트의 기본 브랜
+      - master # 또는 프로젝트의 기본
 
 jobs:
   build-and-deploy:
